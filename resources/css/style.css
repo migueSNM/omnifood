@@ -224,7 +224,8 @@ header {
     margin-top: 20px;
 }
 
-.logo-black { 
+.logo-black {
+    display: none;
     height: 50px;
     width: auto;
     float: left;
@@ -262,16 +263,17 @@ header {
 
 
 /* Sticky navigation */
-.sticky{
+.sticky {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: hsla(0, 0%, 100%, 0.98);
     box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
 }
 
-.main-nav {
+.sticky .main-nav {
     margin-top: 18px;
 }
 
@@ -281,8 +283,8 @@ header {
     color: #555;
 }
 
-.sticky .logo { display: none; };
-.sticky .logo-black { display: block; };
+.sticky .logo { display: none }
+.sticky .logo-black {display: inline-block}
 
 /*-------------------------------------*/
 /* FEATURES */
